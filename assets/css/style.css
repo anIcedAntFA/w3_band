@@ -15,13 +15,25 @@ html {
 
 /* HEADER */
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46.5px;
     background-color: #000;
 }
 
 /* NAV */
-#nav .subnav { /* Revmove dot list "More" and subnav */
+#nav {
+    display: inline-block; /* Default block */
+}
+
+#nav .subnav { /* Remove dot list "More" and subnav */
     list-style-type: none;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px; /* Default: 16px */
 }
 
 #nav > li { /* Only layer 1 effect */
@@ -72,8 +84,25 @@ html {
     line-height: 38.5px;
 }
 
+/* SEARCH BUTTON */
+#header .search-btn {
+    float: right; /* Default div block */
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46.5px;
+}
+
 #slider {
-    
+    margin-top: 46.5px;
 }
 
 #content {
