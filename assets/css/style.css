@@ -9,6 +9,14 @@ html {
     font-family: helvetica, arial, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
 #main {
 
 }
@@ -21,6 +29,7 @@ html {
     right: 0;
     height: 46.5px;
     background-color: #000;
+    z-index: 1; /* Prevent header dive into image slider */
 }
 
 /* NAV */
@@ -101,12 +110,127 @@ html {
     line-height: 46.5px;
 }
 
+/* SLIDER */
 #slider {
-    margin-top: 46.5px;
+    position: relative;
+    margin-top: 46.5px; /* Do header fixed float lên slider */
+    padding-top: 50%; /* 50% itself, height = 50% width */
+    background: url("/assets/img/slider/slider1.jpg") top center / cover no-repeat;
 }
 
-#content {
+#slider .text-content { 
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    /* left: 0;
+    right: 0; */
+    text-align: center;
+}
 
+#slider #text-heading { 
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px; 
+    font-size: 15px;
+}
+
+/* CONTENT */
+#content {
+    height: 2000px;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* ABOUT SECTION */
+#content .about-text {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .members-list {
+    margin-top: 47px;
+    /* overflow: hidden; */
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center; /* Inherit to member-name and member-img */
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* TOUR SECTION */
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    margin-top: 40px;
+    list-style: none;
+    background-color: #fff;
+}
+
+.tickets-list li {
+    padding: 11px 16px;
+    font-size: 15px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px; /* when float is used */
 }
 
 #footer {
