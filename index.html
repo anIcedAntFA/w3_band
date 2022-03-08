@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>The Band</title>
+        <link rel="icon" href="/assets/img/png-clipart-the-beatles-rock-band-music-computer-icons-rock-band-logo-rim.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     </head>
@@ -13,31 +14,34 @@
         <div id="main">
             <!-- Header --->
             <div id="header">
-                <!-- Nav -->
+                <!-- Begin: Nav -->
                 <ul id="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Band</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             More
                             <i class="nav-arrow-down ti-angle-down"></i>
                         </a>
                         <ul class="subnav">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extras</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 </ul>
+                <!-- End: Nav -->
 
-                <!-- Search button -->
+                <!-- Begin: Search button -->
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                 </div>
+                <!-- End: Search button -->
             </div>
 
+            <!-- Slider -->
             <div id="slider">
                 <div class="text-content">
                     <h2 class="text-heading">Chicago</h2>
@@ -45,9 +49,10 @@
                 </div>
             </div>
 
+            <!-- Content -->
             <div id="content">
-                <!-- About section -->
-                <div class="content-section">
+                <!-- Begin: About section -->
+                <div id="band" class="content-section">
                     <h2 class="section-heading">THE BAND</h2>
                     <p class="section-sub-heading">We love music</p>
                     <p class="about-text">
@@ -55,25 +60,25 @@
                     </p>
 
                     <!-- Team -->
-                    <div class="members-list">
-                        <div class="member-item">
+                    <div class="row members-list">
+                        <div class="col col-third text-center">
                             <p class="member-name">Name</p>
                             <img src="/assets/img/team/member1.jpg" alt="" class="member-img">
                         </div>
-                        <div class="member-item">
+                        <div class="col col-third text-center">
                             <p class="member-name">Name</p>
                             <img src="/assets/img/team/member1.jpg" alt="" class="member-img">
                         </div>
-                        <div class="member-item">
+                        <div class="col col-third text-center">
                             <p class="member-name">Name</p>
                             <img src="/assets/img/team/member1.jpg" alt="" class="member-img">
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
+                <!-- End: About section -->
 
-                <!-- Tour section -->
-                <div class="tour-section"> 
+                <!-- Begin: Tour section -->
+                <div id="tour" class="tour-section"> 
                     <div class="content-section">
                         <h2 class="section-heading text-white">TOUR DATES</h2>
                         <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -86,48 +91,94 @@
                         </ul>
 
                         <!-- Places -->
-                        <div class="places-list">
-                            <div class="place-item">
+                        <div class="row places-list">
+                            <div class="col col-third">
                                 <img src="/assets/img/place/place1.jpg" alt="New York" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">New York</h3>
                                     <div class="place-time">Fri 27 Nov 2016</div>
                                     <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                    <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
+                                    <button class="btn js-buy-tickets">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="place-item">
+                            <div class="col col-third">
                                 <img src="/assets/img/place/place2.jpg" alt="Paris" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">Paris</h3>
                                     <div class="place-time">Sat 28 Nov 2016</div>
                                     <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                    <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
+                                    <button class="btn js-buy-tickets">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="place-item">
+                            <div class="col col-third">
                                 <img src="/assets/img/place/place3.jpg" alt="San Francisco" class="place-img">
                                 <div class="place-body">
                                     <h3 class="place-heading">San Francisco</h3>
                                     <div class="place-time">Sun 29 Nov 2016</div>
                                     <div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                    <button class="place-buy-btn js-buy-tickets">Buy Tickets</button>
+                                    <button class="btn js-buy-tickets">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
+                <!-- End: Tour section -->
 
-                <!-- Contact section -->
-                <div class="content-section">
+                <!-- Begin: Contact section -->
+                <div id="contact" class="content-section">
                     <h2 class="section-heading">CONTACT</h2>
                     <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                    <div class="row contact-content">
+                        <!-- Information -->
+                        <div class="col col-half contact-info">
+                            <p><i class="ti-location-pin"></i>Chicago, US</p>
+                            <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                            <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        </div>
+
+                        <!-- Form -->
+                        <div class="col col-half contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-half">
+                                        <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    </div>
+                                    <div class="col col-half">
+                                        <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-8">
+                                    <div class="col col-full">
+                                        <input type="message" name="" placeholder="Message" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <input class="btn mt-16 pull-right" type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>
                 </div>
+                <!-- End: Contact section -->
+
+                <!-- Begin: Map section -->
+                <div class="map-section">
+                    <img src="/assets/img/map/map.jpg" alt="Map">
+                </div>
+                <!-- End: Map section -->
             </div>
 
+            <!-- Footer -->
             <div id="footer">
+                <div class="socials-list text-center">
+                    <a href=""><i class="ti-facebook"></i></a>                
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-twitter-alt"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
+                </div>
 
+                <p class="copyright text-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="">w3.css</a></p>
             </div>
         </div>
         
