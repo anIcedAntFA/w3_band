@@ -27,3 +27,30 @@ modal.addEventListener("click", hideBuyTickets);
 modalContainer.addEventListener("click", function () {
     event.stopPropagation();
 });
+
+// Mobile
+// Open/Close mobile menu
+const header = document.getElementById("header");
+const mobileMenu = document.getElementById("js-mobile-menu");
+const headerHeight = header.clientHeight;
+
+mobileMenu.onclick = function () {
+    let isClosed = header.clientHeight === headerHeight;
+
+    if (isClosed) {
+        header.style.height = "auto";
+    } else {
+        header.style.height = null;
+    }
+}
+
+// Auto close when clicking menu items
+const menuItems = document.querySelectorAll("#nav li a[href*='#']");
+
+for (let i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];
+
+    menuItem.onclick = function () {
+        header.style.height = null;
+    }
+}

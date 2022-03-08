@@ -90,6 +90,7 @@ html {
     height: 46.5px;
     background-color: #000;
     z-index: 1; /* Prevent header dive into image slider */
+    overflow: hidden;
 }
 
 /* NAV */
@@ -154,8 +155,8 @@ html {
 }
 
 /* SEARCH BUTTON */
-#header .search-btn {
-    float: right; /* Default div block */
+#header .search-btn,
+#header .mobile-menu-btn {
     padding: 0 21px;
 }
 
@@ -164,9 +165,18 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
-    color: #fff;
     font-size: 20px;
+    color: #fff;
     line-height: 46.5px;
 }
 
@@ -205,7 +215,10 @@ html {
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px; /* responsive tablet */
+    padding-right: 16px;
     width: 800px;
+    max-width: 100%; /* strong effect than width */
 }
 
 #content .section-heading {
